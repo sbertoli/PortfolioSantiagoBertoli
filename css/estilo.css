@@ -1,4 +1,8 @@
-/* GOOGLE  FONT */
+/* scroll */
+html {
+    scroll-behavior: smooth;
+   
+}
 
 
 
@@ -45,6 +49,7 @@ nav {
     justify-content: space-between;
     gap: 2rem;
 
+
 }
 
 
@@ -60,8 +65,7 @@ nav {
 }
 
 
-a,
-ul {
+a, ul {
     text-decoration: none;
     list-style: none;
     display: flex;
@@ -154,6 +158,7 @@ header .contenido p {
     color: #fff;
     text-align: center;
     margin-bottom: 70px;
+    
 }
 
 .contenedorCards {
@@ -283,23 +288,26 @@ header .contenido p {
 /* ESTUDIOS */
 
 .contenedorEstudios{
-    position: relative;
-    float: right;
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.estudios1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     border: 2px solid rgb(11, 218, 255);
     width: 1300px;
     border-radius: 150px 0px 0px 150px;
     box-shadow: 0 0px 25px 5px rgb(0, 174, 255);
     padding-bottom: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 70px;;
 }
 
 
 .avatarEst{
     width: 350px;
-    position: relative;
     
 }
 
@@ -309,19 +317,22 @@ header .contenido p {
     color: #fff;
     font-family: 'Protest Strike', sans-serif;
     font-weight: bold;
+    padding-top: 20px;
 }
 
 .descEstudios{
     color: #fff;
    
-    
 }
 
 .listaEst{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     color: #fff;
     list-style: none;
-    line-height: 40px;
+    line-height: 50px;
     font-size:20px;
     
 }
@@ -350,14 +361,12 @@ button:hover{
 /*EXPERIENCIA*/
 
 .contenedorExp{
-    position: relative;
     display: flex;
     justify-content: center;
     border: 2px solid rgb(11, 218, 255);
     width: 1300px;
     border-radius: 0 150px 150px 0;
     box-shadow: 0 0px 25px 5px rgb(0, 174, 255);
-    padding-bottom: 10px;
     margin-top: 70px;
 }
 
@@ -390,3 +399,115 @@ button:hover{
     
 }
 
+/* FINALIZA EXP */
+
+/* SKILLS */
+.skills{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+.contenedorSkills{
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(11, 218, 255);
+    width: 1300px;
+    border-radius: 150px 0px 0px 150px;
+    box-shadow: 0 0px 25px 5px rgb(0, 174, 255);
+    padding-bottom: 10px;
+    margin-top: 70px;
+}
+.skillsIconos{
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 120px;
+
+}
+
+.imgSkills{
+    margin-top: 70px;
+    width: 120px;
+}
+
+h4{
+    position: relative;
+    left: 290px;
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Protest Strike', sans-serif;
+    font-weight: bold;
+}
+
+
+/* Finaliza Skills */
+/* CERTIFICADOS */
+
+.contenedorCertificados{
+    
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid rgb(11, 218, 255);
+    width: 1300px;
+    border-radius: 0 150px 150px 0;
+    box-shadow: 0 0px 25px 5px rgb(0, 174, 255);
+    padding-bottom: 10px;
+    margin-top: 70px;
+   
+}
+
+ .certif{
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: 1.2s;
+    border-radius: 8px;
+    box-shadow: 0 0px 25px 5px rgb(0, 174, 255);
+}
+
+.certif:hover{
+    transform: scale(1.5);
+    box-shadow: 0 0px 25px 5px rgb(0, 255, 234);
+}
+
+/* finaliza skills */
+/* CONTACTO */
+
+.tituloContacto{
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Protest Strike', sans-serif;
+    font-weight: bold;
+}
+
+.contacto1{
+    text-align: center;
+    border: 2px solid rgb(11, 218, 255);
+    border-radius: 150px 150px 150px ;
+    box-shadow: 0 0px 25px 5px rgb(0, 174, 255);
+    padding-bottom: 10px;
+    margin-top: 70px;
+
+}
+
+
+.imgContacto{
+    width: 100px;
+    box-shadow: 0 0px 25px 5px rgb(0, 174, 255);
+    border-radius: 200px;
+    transition: 1.2s;
+
+}
+
+
+.contactoIconos{
+    display: flex;
+   justify-content: space-evenly;
+}
+
+
+.imgContacto:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0px 25px 5px rgb(0, 255, 221);
+
+}
