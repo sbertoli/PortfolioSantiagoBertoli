@@ -28,6 +28,19 @@ a {
 
 }
 
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+
+}
+
+
+
 .nav a:hover {
 
     transform: scale(1.5);
@@ -35,47 +48,55 @@ a {
 }
 
 body {
-    background-color: rgb(0, 16, 37);
+    background-color: rgb(0, 12, 29);
     font-family: "poppins", sans-serif;
 }
 
 
-nav {
-    max-width: 1200px;
-    margin: auto;
-    padding: 2rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-
-
-}
-
 
 .imgPerfil {
-    object-fit: cover;
-    border-radius: 200px;
-    height: 200px;
-    width: 200px;
-    box-shadow: 0px 0px 9px 10px rgb(0, 174, 255);
-    display: flex;
-
-
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0px 0px 20px 2px rgb(0, 203, 253);
 }
 
-
-a, ul {
-    text-decoration: none;
+.nav-links{
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 5rem;
+    
+    
+}
+
+.link a{
     position: relative;
     padding-bottom: 0.75rem;
-    font-family: "poppins" sans-serif;
-
+    color: #fff;
+    font-weight: bold;
+    
 }
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #026897;
+    transition: all 0.3s ease;
+    
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+
 
 .container {
     max-width: 1200px;
@@ -269,6 +290,8 @@ header .contenido p {
     margin-left: 50px;
     color: #fff;
     width: 600px;
+    line-height: 1.8;
+    
     
 
 
@@ -425,6 +448,19 @@ button:hover{
 
 }
 
+.imgGit{
+    background-color: #fff;
+    width: 100px;
+    box-shadow: 0 0px 25px 5px rgb(0, 174, 255);
+    border-radius: 300px;
+    transition: 1.2s;
+}
+
+.imgGit:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0px 25px 5px rgb(0, 255, 221);
+}
+
 .imgSkills{
     margin-top: 70px;
     width: 120px;
@@ -448,7 +484,7 @@ h4{
     display: flex;
     justify-content: space-around;
     border: 2px solid rgb(11, 218, 255);
-    width: 1300px;
+    width: 1390px;
     border-radius: 0 150px 150px 0;
     box-shadow: 0 0px 25px 5px rgb(0, 174, 255);
     padding-bottom: 10px;
@@ -480,7 +516,7 @@ h4{
     font-weight: bold;
 }
 
-.contacto1{
+#contacto1{
     text-align: center;
     border: 2px solid rgb(11, 218, 255);
     border-radius: 150px 150px 150px ;
@@ -510,4 +546,77 @@ h4{
     transform: scale(1.05);
     box-shadow: 0 0px 25px 5px rgb(0, 255, 221);
 
+}
+
+
+
+/* FIN CONTACTO */
+
+/* BOTON IR ARRIBA */
+.scroll-to-top {
+    position: fixed;
+    border: none;
+    border-radius: 200px;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #026897;
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: 0 0px 25px 5px rgb(0, 174, 255);
+    transition: 1s;
+    
+  }
+  
+  .scroll-to-top:hover{
+    box-shadow: 0 0px 25px 5px rgb(0, 238, 255);
+    transform: scale(1.1);
+  }
+ 
+/* MEDIA QUERIES, RESPONSIVE */
+
+@media (width < 370px){
+    .nav-links{
+        display: none;
+    }
+    header{
+        grid-template-columns: repeat(1,1fr);
+    }
+    header .imgProg {
+        grid-area: 1;
+     }  
+
+     .contenido{
+        width: 350px;
+        text-align: center;
+     }
+
+     #blog{
+        
+        
+     }
+
+     .contenedorBlog{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 2rem;
+        text-align: start;
+        width: 550px;
+        background-color: rgba(127, 255, 212, 0.315);
+     }
+     .sobreMi{
+        text-align: start;
+     }
+
+     .descBlog{
+        width: 350px;
+     }
+
+     .avatar{
+        display: none;
+        
+     }
+
+
+    
 }

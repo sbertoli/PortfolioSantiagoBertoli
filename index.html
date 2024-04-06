@@ -5,55 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Santiago Bertoli</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/estilo.css">
-    <!-- GOOGLE FONT -->
+
+<!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@500&family=Protest+Strike&display=swap"
         rel="stylesheet">
+
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
+    
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 
 </head>
 
 <body>
 
+     <nav>
+        
 
-    <nav class="nav">
+        <ul class="nav-links">
+        <li class="link"><a href="#">Inicio</a></li>
+        <li class="link"><a href="#proyectos">Proyecto</a></li>
 
-
-
-        <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-        </ul>
-
-        <div class="nav-logo">
-            <img class="imgPerfil" src="img/fotoPerfil.webp" alt="Foto de frente, foto de logo">
+        <div >
+            <a href="#">
+                <img class="imgPerfil" src="img/fotoPerfil.webp">
+            </a>
         </div>
 
-        <ul>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="">Contacto</a></li>
+        <li class="link"><a href="#blog">Blog</a></li>
+        <li class="link"><a href="#contacto1">Contacto</a></li>
         </ul>
 
-    </nav>
+
+     </nav>
+
+     
+     
+     
 
 
     <header class="container">
-
+       
         <div class="contenido">
             <span class="blur"></span>
             <span class="blur"></span>
 
             <h1>¡Hola, soy <span> Santiago Bertoli!</span> <br> Web Developer</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vero dolorem reiciendis possimus, aliquid
-                quis
-                doloribus maiores asperiores commodi assumenda!</p>
+            <p>Bienvenido a mi portfolio. Estoy emocionado por aprender y crecer como desarrollador web, y mostrar mis habilidades
+                en la creación de soluciones digitales. ¡Explorando el mundo de la web, paso a paso!</p>
         </div>
         <div class="imgProg">
-            <img src="img/programacion.webp" alt="">
+            <img class="image" src="img/programacion.webp" alt="">
             <span class="blur2"></span>
             <span class="blur2"></span>
 
@@ -191,6 +200,7 @@
                     <img class="imgSkills" src="img/css-3.webp" alt="">
                     <img class="imgSkills" src="img/bootstrap-5-logo-icon.webp" alt="">
                     <img class="imgSkills" src="img/sassIcono.webp" alt="">
+                    <img class="imgSkills" src="img/git-logo-CD8D6F1C09-seeklogo.com.webp" alt="">
 
                 </div>
 
@@ -205,9 +215,10 @@
 
     <section id="certificaciones">
         <div class="contenedorCertificados" data-aos="fade-right">
-            <img class="certif" src="img/certificadoPython.webp" alt="">
-            <img class="certif" src="img/certificadoIntDw.webp" alt="">
-            <img class="certif" src="img/Certificado-JavaScript.webp" alt="">
+            <img class="certif" src="img/certificadoPython.webp" alt="CertificadoPython">
+            <img class="certif" src="img/certificadoIntDw.webp" alt="certificadoIntroduccionAlDesarrolloWeb">
+            <img class="certif" src="img/Certificado-JavaScript.webp" alt="certificadoJs">
+            <img class="certif" src="img/65e071678d9a0a13fbaf86d1 (1).png" alt="certificadoDesarrolloWeb" >
         </div>
     </section>
     <!-- FINALIZA CERTICIADOS -->
@@ -215,12 +226,12 @@
     <!-- CONTACTO -->
 
 
-    <section class="contacto1">
+    <section id="contacto1">
         <h1 class="tituloContacto">Contacto</h1>
         <div class="contactoIconos">
 
             <a href="https://github.com/sbertoli">
-                <img class="imgContacto" src="img/github.png" alt="">
+                <img class="imgGit" src="img/github.png" alt="">
             </a>
             
             <a href="https://www.linkedin.com/in/santiago-bertoli-a54488202/">
@@ -235,6 +246,9 @@
         </div>
     </section>
 
+    <div>
+        <a href="#top" class="scroll-to-top">▲</a>
+    </div>
 
 
 
@@ -246,8 +260,8 @@
 
 
 
-
-
+    <!-- SCRIPT BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 
     <!-- SCRIPT AOS -->
